@@ -29,5 +29,16 @@ jsUser.greetingTwo = function() {
     
 }
 
-console.log(jsUser.greeting());
-console.log(jsUser.greetingTwo());
+// console.log(jsUser.greeting());
+// console.log(jsUser.greetingTwo());
+
+
+const course = {
+    coursename: "js in hindhi",
+    price: 999,
+    courseinstructor: "hitesh"
+}
+
+const {courseinstructor: instructor} = course
+
+console.log(instructor);
