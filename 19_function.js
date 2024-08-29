@@ -67,7 +67,7 @@ function handleobject(anyobject) {
   
 }
 
-handleobject(user)
+//handleobject(user)
 
 
 const mynewarray = [200,300,400,500];
@@ -76,4 +76,17 @@ function handlearray(getarray) {
 return getarray[1]
 }
 
-console.log(handlearray(mynewarray));
+//console.log(handlearray(mynewarray));
+
+
+
+
+if(true){
+    let a = 10
+    const b = 20
+    var c = 30
+}
+
+//console.log(a)
+//console.log(b)
+console.log(c)
