@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <h1>chai or code</h1>
+    <button type="button" id="start">start</button>
+    <button type="button" id="stop">stop</button>
+</body>
+<script>
+    // setTimeout(()=>{
+    //     console.log("ram ram ladar")
+    // },2000)
+
+//    const changeText = function(){
+//     document.querySelector('h1').innerHTML = "ram ram mitar"
+//    }
+//    const changeMe = setTimeout(changeText,2000)
+//    document.querySelector('#stop').addEventListener("click",()=>{
+//     clearTimeout(changeMe)
+//     console.log("stopped")
+//    })
+
+const sayName = function(){
+    console.log("keshav")
+}
+
+let intervalId;
+document.querySelector('#start').addEventListener("click",()=>{
+   intervalId =  setInterval(sayName,1000)
+})
+document.querySelector('#stop').addEventListener("click",()=>{
+    clearInterval(intervalId)
+    console.log("stoped");
+    
+})
+</script>
+</html>
